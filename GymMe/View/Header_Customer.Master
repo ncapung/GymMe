@@ -1,0 +1,24 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Header_Customer.master.cs" Inherits="GymMe.View.Header_Customer" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:Button ID="OrderBtn" runat="server" Text="Order Supplement" style="margin-right: 15px" OnClick="OrderBtn_Click" />
+        <asp:Button ID="HistoryBtn" runat="server" Text="History" style="margin-right: 15px" OnClick="HistoryBtn_Click" />
+        <asp:Button ID="ProfileBtn" runat="server" Text="Profile" style="margin-right: 15px" OnClick="ProfileBtn_Click" />
+        <asp:Button ID="LogOutBtn" runat="server" Text="Log Out" onclick="LogOutBtn_Click" style="float:right" />
+    </div>
+
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+</form>
+</body>
+</html>
